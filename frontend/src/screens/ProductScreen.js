@@ -12,7 +12,7 @@ function ProductScreen(props) {
     }
     return (
       <div>
-        <Link to="/">Revenir au recherche</Link>
+        <Link to="/">Revenir à la boutique</Link>
         <div className="row top">
           <div className="col-2">
             <img className="large" src={product.image} alt={product.name} />
