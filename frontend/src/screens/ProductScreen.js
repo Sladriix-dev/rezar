@@ -18,7 +18,7 @@ function ProductScreen(props) {
             <img className="large" src={product.image} alt={product.name} />
           </div>
           <div className="col-1">
-            <ul>
+            <ul className='desc_product'>
                 <li>
                     <h1>{product.name}</h1>
                 </li>
@@ -28,8 +28,7 @@ function ProductScreen(props) {
                         numReviews={product.numReviews}
                     />
                 </li>
-                <li>Price : ${product.price}</li>
-                <li>Description :
+                <li>
                     <p>{product.description}</p>
                 </li>
             </ul>
@@ -39,7 +38,7 @@ function ProductScreen(props) {
                 <ul>
                     <li>
                         <div className='row'>
-                            <div>Price</div>
+                            <div>Prix</div>
                             <div className='price'>${product.price}</div>
                         </div>
                     </li>

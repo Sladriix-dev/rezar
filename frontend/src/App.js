@@ -1,6 +1,7 @@
 import React from "react";
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import HomeScreen from "./screens/HomeScreen";
+import logo from './assets/logo.svg'
 import ProductScreen from "./screens/ProductScreen";
 
 function App() {
@@ -9,8 +10,8 @@ function App() {
       <div className="grid-container">
         <header className="row">
           <div>
-            <a className="brand" href="/">
-              Rezar
+            <a href="/">
+              <img className="logo" src={logo} alt="logo" />
             </a>
           </div>
           <div>
