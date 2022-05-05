@@ -210,6 +210,22 @@ img.large {
   color: #00ff00;
 }
 
-.error {
+.danger {
   color: #ff0000;
+}
+
+.alert {
+  padding: 1rem;
+  border: 0.1rem solid transparent;
+  border-radius: 0.5rem;
+}
+
+.alert-info {
+  color: #00ff00;
+  background-color: #e0e0ff;
+}
+
+.alert-danger {
+  color: #a02020;
+  background-color: #e0e0ff;
 }
