@@ -122,6 +122,14 @@ button.block {
   width: 100%;
 }
 
+.cart_select {
+  background-color: #555555;
+}
+
+.cart_delete {
+  background-color: #555555;
+}
+
 .desc_product {
   color: #d4c0c0;
 }
@@ -175,10 +183,19 @@ header a{
   flex: 2 1 50rem;
 }
 
+.min-30 {
+  min-width: 30rem;
+}
+
 /* Image */
 
 img {
   border-radius: 0.5rem;
+}
+
+img.small {
+  max-width: 5rem;
+  width: 100%;
 }
 
 img.medium {
