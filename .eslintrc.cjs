@@ -1,5 +1,6 @@
 module.exports = {
     "env": {
+        "node": true,
         "browser": true,
         "es2021": true
     },
@@ -13,6 +14,9 @@ module.exports = {
         },
         "ecmaVersion": "latest",
         "sourceType": "module"
+    },
+    "globals": {
+        "process": true
     },
     "plugins": [
         "react"
