@@ -148,6 +148,7 @@ header a{
 .logo {
   width: 4rem;
   padding: 0.3rem;
+  z-index: 1;
 }
 
 .badge {
@@ -268,4 +269,82 @@ img.large {
 .alert-danger {
   color: #a02020;
   background-color: #e0e0ff;
+}
+
+/* Form */
+
+.signin {
+  background-image: 
+  url(
+  "https://razerid-assets.razerzone.com/static/media/razer-phone.8a4e47ff.jpg");
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-height: 100%;
+  min-width: 100%;
+  background-size: cover;
+  z-index: 1;
+}
+
+.form {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 380px;
+  min-height: 200px;
+  margin: 7rem auto;
+  border: 1px solid #333;
+  background-color: #222;
+  padding: 30px 24px;
+  overflow: hidden;
+  z-index: 2;
+}
+
+.form > div {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem;
+}
+
+.form label {
+  position: absolute;
+}
+
+.form input {
+  background: transparent;
+  border: 1px solid #808080;
+  border-radius: 10px;
+  outline: none;
+}
+
+.form input:focus {
+  border-color: #44D62C;
+}
+
+.email_label {
+  top: 13.9rem;
+  left: 5rem;
+  transition: .3s;
+  color: #ffffff;
+  padding: 0 5px;
+}
+
+.form input:focus ~ label.email_label {
+  top: 11.8rem;
+  background-color: #222222;
+}
+
+.pwd_label {
+  top: 19.9rem;
+  left: 5rem;
+  color: #ffffff;
+  transition: .3s;
+  padding: 0 5px;
+}
+
+.form input:focus ~ label.pwd_label {
+  top: 17.8rem;
+  background-color: #222222;
 }
