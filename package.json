@@ -18,7 +18,10 @@
   },
   "homepage": "https://github.com/Sladriix-dev/rezar#readme",
   "dependencies": {
-    "express": "^4.18.1"
+    "bcryptjs": "^2.4.3",
+    "express": "^4.18.1",
+    "express-async-handler": "^1.2.0",
+    "mongoose": "^6.3.2"
   },
   "devDependencies": {
     "eslint": "^8.14.0",
