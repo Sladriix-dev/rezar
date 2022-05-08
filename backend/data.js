@@ -18,7 +18,6 @@ const data = {
 
     products: [
         {
-            _id:'1',
             name:'Rezar Blade 17',
             category:'PC',
             image:'/images/p1.jpg',
@@ -30,7 +29,6 @@ const data = {
             description:'Le remplacement ultime du bureau avec les derniers GPU NVIDIA® GeForce RTX™ série 30, le processeur Intel® Core™ de 12e génération (14 cœurs) et les écrans les plus rapides',
         },
         {
-            _id:'2',
             name:'Rezar Kaira Pro',
             category:'Console',
             image:'/images/p2.jpg',
@@ -42,7 +40,6 @@ const data = {
             description:'Casque sans fil PlayStation 5 Dual avec technologie haptique ',
         },
         {
-            _id:'3',
             name:'R1 Edition Maingear',
             category:'PC',
             image:'/images/p3.jpg',
@@ -54,7 +51,6 @@ const data = {
             description:'Le PC de bureau par excellence préconfiguré pour la performance',
         },
         {
-            _id:'4',
             name:'Raptor 27 1440P 165Hz',
             category:'PC',
             image:'/images/p4.jpg',
@@ -66,7 +62,6 @@ const data = {
             description:'Le moniteur gaming ultime ',
         },
         {
-            _id:'5',
             name:'Kishi for Android',
             category:'Mobile',
             image:'/images/p5.jpg',
@@ -78,7 +73,6 @@ const data = {
             description:'Universal Gaming Controller for Android ',
         },
         {
-            _id:'6',
             name:'Rezar Blade 15',
             category:'PC',
             image:'/images/p6.jpg',
