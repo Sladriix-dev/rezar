@@ -148,7 +148,7 @@ header a{
 .logo {
   width: 4rem;
   padding: 0.3rem;
-  z-index: 1;
+  z-index: 5;
 }
 
 .badge {
@@ -269,6 +269,7 @@ img.large {
 .alert-danger {
   color: #a02020;
   background-color: #e0e0ff;
+  top: 5rem;
 }
 
 /* Form */
@@ -278,7 +279,7 @@ img.large {
   url(
   "https://razerid-assets.razerzone.com/static/media/razer-phone.8a4e47ff.jpg");
   position: fixed;
-  top: 0;
+  top: 5rem;
   left: 0;
   min-height: 100%;
   min-width: 100%;
@@ -299,7 +300,6 @@ img.large {
   background-color: #222;
   padding: 30px 24px;
   overflow: hidden;
-  z-index: 2;
 }
 
 .form > div {
@@ -336,6 +336,11 @@ img.large {
   background-color: #222222;
 }
 
+.form input:valid ~ label.email_label {
+  top: 11.8rem;
+  background-color: #222222;
+}
+
 .pwd_label {
   top: 19.9rem;
   left: 5rem;
@@ -347,4 +352,33 @@ img.large {
 .form input:focus ~ label.pwd_label {
   top: 17.8rem;
   background-color: #222222;
+}
+
+.form input:valid ~ label.pwd_label {
+  top: 17.8rem;
+  background-color: #222222;
+}
+
+/* Dropdown */
+
+.dropdown {
+  display: inline-block;
+  position: relative;
+}
+
+.dropdown-content {
+  position: absolute;
+  display: none;
+  right: 0;
+  min-width: 12rem;
+  padding: 1rem;
+  z-index: 1;
+  background-color: #000000;
+  margin: 0;
+  margin-top: 0.4rem;
+  border-radius: 0.5rem;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
 }

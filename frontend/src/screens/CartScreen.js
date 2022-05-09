@@ -9,7 +9,7 @@ export default function CartScreen(props) {
   const navigate = useNavigate();
   const productId = params.id;
   const { search } = useLocation();
-  const qtyInUrl = new URLSearchParams(search).get("qty");
+  const qtyInUrl = new URLSearchParams(search).get('qty');
   const qty = qtyInUrl ? Number(qtyInUrl) : 1;
   const dispatch = useDispatch();
 
