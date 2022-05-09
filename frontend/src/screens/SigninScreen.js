@@ -42,10 +42,10 @@ export default function SigninScreen(props) {
           <input
             type="email"
             id="email"
-            reuquired
+            required
             onChange={(e) => setEmail(e.target.value)}
           />
-          <label htmlFor="email" className="email_label">
+          <label htmlFor="email" className="first_label">
             Email
           </label>
         </div>
@@ -53,10 +53,10 @@ export default function SigninScreen(props) {
           <input
             type="password"
             id="password"
-            reuquired
+            required
             onChange={(e) => setPassword(e.target.value)}
           />
-          <label htmlFor="password" className="pwd_label">
+          <label htmlFor="password" className="second_label">
             Mot de passe
           </label>
         </div>
@@ -70,7 +70,7 @@ export default function SigninScreen(props) {
           <label />
           <div>
             Pas de compte ? {""}
-            <Link to="/register">Créer votre compte</Link>
+            <Link to={`/register?redirect=${redirect}`}>Inscrivez-vous</Link>
           </div>
         </div>
       </form>

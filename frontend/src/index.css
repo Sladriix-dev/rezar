@@ -1,5 +1,6 @@
 html {
-  font-size: 62.5%; /* 16px x 62.5 = 10px = 1rem */
+  font-size: 62.5%;
+  /* 16px x 62.5 = 10px = 1rem */
   box-sizing: border-box;
 }
 
@@ -21,10 +22,10 @@ body {
 
 .grid-container {
   display: grid;
-  grid-template-areas: 
-      'header'
-      'main'
-      'footer';
+  grid-template-areas:
+    'header'
+    'main'
+    'footer';
   grid-template-columns: 1fr;
   grid-template-rows: 5rem 1fr 5rem;
   height: 100%;
@@ -140,7 +141,7 @@ header {
   border-bottom: 1px solid #44D62C;
 }
 
-header a{
+header a {
   color: #555555;
   padding: 1rem;
 }
@@ -221,7 +222,7 @@ img.large {
   padding: 1rem;
 }
 
-.card-body > *{
+.card-body>* {
   margin-bottom: 0.5rem;
 }
 
@@ -246,6 +247,10 @@ img.large {
 }
 
 /* Alert */
+
+.loading {
+  display: block !important;
+}
 
 .success {
   color: #00ff00;
@@ -275,9 +280,8 @@ img.large {
 /* Form */
 
 .signin {
-  background-image: 
-  url(
-  "https://razerid-assets.razerzone.com/static/media/razer-phone.8a4e47ff.jpg");
+  background-image:
+    url("https://razerid-assets.razerzone.com/static/media/razer-phone.8a4e47ff.jpg");
   position: fixed;
   top: 5rem;
   left: 0;
@@ -302,7 +306,7 @@ img.large {
   overflow: hidden;
 }
 
-.form > div {
+.form>div {
   display: flex;
   flex-direction: column;
   margin: 1rem;
@@ -310,11 +314,13 @@ img.large {
 
 .form label {
   position: absolute;
+  pointer-events: none;
 }
 
 .form input {
   background: transparent;
   border: 1px solid #808080;
+  color: #ffffff;
   border-radius: 10px;
   outline: none;
 }
@@ -323,39 +329,59 @@ img.large {
   border-color: #44D62C;
 }
 
-.email_label {
+.first_label {
   top: 13.9rem;
-  left: 5rem;
+  left: 4.5rem;
   transition: .3s;
-  color: #ffffff;
+  color: #808080;
   padding: 0 5px;
 }
 
-.form input:focus ~ label.email_label {
+.form input:focus~label.first_label,
+.form input:valid~label.first_label {
   top: 11.8rem;
   background-color: #222222;
 }
 
-.form input:valid ~ label.email_label {
-  top: 11.8rem;
-  background-color: #222222;
-}
-
-.pwd_label {
+.second_label {
   top: 19.9rem;
-  left: 5rem;
-  color: #ffffff;
+  left: 4.5rem;
+  color: #808080;
   transition: .3s;
   padding: 0 5px;
 }
 
-.form input:focus ~ label.pwd_label {
+.form input:focus~label.second_label,
+.form input:valid~label.second_label {
   top: 17.8rem;
   background-color: #222222;
 }
 
-.form input:valid ~ label.pwd_label {
-  top: 17.8rem;
+.third_label {
+  top: 25.9rem;
+  left: 4.5rem;
+  color: #808080;
+  transition: .3s;
+  padding: 0 5px;
+}
+
+.form input:focus~label.third_label,
+.form input:valid~label.third_label {
+  top: 23.8rem;
+  background-color: #222222;
+}
+
+.fourth_label {
+  top: 31.9rem;
+  left: 4.5rem;
+  color: #808080;
+  transition: .3s;
+  padding: 0 5px;
+}
+
+.form input:focus~label.fourth_label,
+.form input:valid~label.fourth_label {
+  top: 29.8rem;
   background-color: #222222;
 }
 
