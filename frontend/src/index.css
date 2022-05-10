@@ -302,7 +302,7 @@ img.large {
   margin: 7rem auto;
   border: 1px solid #333;
   background-color: #222;
-  padding: 30px 24px;
+  padding: 30px 30px;
   overflow: hidden;
 }
 
@@ -385,6 +385,20 @@ img.large {
   background-color: #222222;
 }
 
+.fifth_label {
+  top: 38rem;
+  left: 4.5rem;
+  color: #808080;
+  transition: .3s;
+  padding: 0 5px;
+}
+
+.form input:focus~label.fifth_label,
+.form input:valid~label.fifth_label {
+  top: 35.9rem;
+  background-color: #222222;
+}
+
 /* Dropdown */
 
 .dropdown {
@@ -407,4 +421,19 @@ img.large {
 
 .dropdown:hover .dropdown-content {
   display: block;
+}
+
+/* Checkout Steps */
+
+.checkout-steps > div {
+  border-top: 0.3rem #c0c0c0 solid;
+  color: #c0c0c0;
+  flex: 1;
+  padding: 1rem;
+  font-weight: bold;
+}
+
+.checkout-steps > div.active {
+  border-top-color: #00ff00;
+  color: #00ff00;
 }
