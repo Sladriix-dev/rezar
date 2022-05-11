@@ -409,6 +409,10 @@ img.large {
   margin: 5px;
 }
 
+.min-30 a {
+  color: #000000 !important;
+}
+
 /* Dropdown */
 
 .dropdown {
