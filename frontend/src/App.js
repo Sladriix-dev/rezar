@@ -4,6 +4,7 @@ import HomeScreen from "./screens/HomeScreen";
 import logo from "./assets/logo.svg";
 import ProductScreen from "./screens/ProductScreen";
 import CartScreen from "./screens/CartScreen";
+import PlaceOrderScreen from "./screens/PlaceOrderScreen";
 import RegisterScreen from "./screens/RegisterScreen";
 import { useDispatch, useSelector } from "react-redux";
 import SigninScreen from "./screens/SigninScreen";
@@ -60,6 +61,7 @@ function App() {
             <Route path="/register" element={<RegisterScreen />} />
             <Route path="/shipping" element={<ShippingAddressScreen />} />
             <Route path="/payment" element={<PaymentMethodScreen />} />
+            <Route path="/placeorder" element={<PlaceOrderScreen />} />
             <Route path="/" element={<HomeScreen />} exact />
           </Routes>
         </main>
